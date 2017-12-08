@@ -10,6 +10,8 @@
 
 @interface HMSegmentedControl (Category)
 
+@property (nonatomic, strong) UIScrollView *meanScrollView ;
+
 + (instancetype)segmentControlWithTitles:(NSArray *)titles;
 
 @end

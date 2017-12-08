@@ -8,7 +8,7 @@
 
 #import "ChildVC2.h"
 
-@interface ChildVC2 ()
+@interface ChildVC2 ()<UITableViewDataSource,UITableViewDelegate>
 
 @end
 
@@ -16,7 +16,26 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    self.mainView.dataSource = self;
+    
+}
+
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return 30;
+}
+
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    static NSString *cellIdenfier = @"cell";
+    UITableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:cellIdenfier];
+    if (cell==nil) {
+        cell=[[UITableViewCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"cell"];
+    }
+    cell.textLabel.text = [NSString stringWithFormat:@"第 %ld 组数据",(long)indexPath.row];
+    cell.textLabel.textColor = [UIColor colorWithRed:1.0 green:0.27 blue:0.0 alpha:1.0];
+    [cell useCellFrameCacheWithIndexPath:indexPath tableView:tableView];
+    return  cell;
+    
 }
 
 - (void)didReceiveMemoryWarning {

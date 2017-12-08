@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DemoVC.h"
 
-@interface Demo1VC : UIViewController
+@interface Demo1VC : DemoVC
+
+
 
 @end

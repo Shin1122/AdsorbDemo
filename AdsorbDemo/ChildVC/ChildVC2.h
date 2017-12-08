@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ChildVC1.h"
 
-@interface ChildVC2 : UIViewController
+@interface ChildVC2 : ChildVC1
 
 @end

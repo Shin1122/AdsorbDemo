@@ -15,6 +15,20 @@
 		54523F721FDAD28400F6F1C5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 54523F711FDAD28400F6F1C5 /* main.m */; };
 		54523F7C1FDAD28400F6F1C5 /* AdsorbDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 54523F7B1FDAD28400F6F1C5 /* AdsorbDemoTests.m */; };
 		54523F871FDAD28400F6F1C5 /* AdsorbDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 54523F861FDAD28400F6F1C5 /* AdsorbDemoUITests.m */; };
+		54523F9F1FDADAEE00F6F1C5 /* UIView+SDAutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 54523F9C1FDADAEE00F6F1C5 /* UIView+SDAutoLayout.m */; };
+		54523FA01FDADAEE00F6F1C5 /* UITableView+SDAutoTableViewCellHeight.m in Sources */ = {isa = PBXBuildFile; fileRef = 54523F9E1FDADAEE00F6F1C5 /* UITableView+SDAutoTableViewCellHeight.m */; };
+		54523FA81FDADC9D00F6F1C5 /* Demo1VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 54523FA71FDADC9D00F6F1C5 /* Demo1VC.m */; };
+		54523FB11FDADD6200F6F1C5 /* UITableView+CYLTableViewPlaceHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = 54523FAC1FDADD6100F6F1C5 /* UITableView+CYLTableViewPlaceHolder.m */; };
+		54523FB21FDADD6200F6F1C5 /* HMSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 54523FB01FDADD6100F6F1C5 /* HMSegmentedControl.m */; };
+		54523FB51FDADD7800F6F1C5 /* HMSegmentedControl+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 54523FB41FDADD7700F6F1C5 /* HMSegmentedControl+Category.m */; };
+		549A0F501FDAF38600E32B08 /* ChildVC1.m in Sources */ = {isa = PBXBuildFile; fileRef = 549A0F4F1FDAF38600E32B08 /* ChildVC1.m */; };
+		549A0F531FDAF39100E32B08 /* ChildVC2.m in Sources */ = {isa = PBXBuildFile; fileRef = 549A0F521FDAF39100E32B08 /* ChildVC2.m */; };
+		549A0F561FDAF3AF00E32B08 /* ChildVC4.m in Sources */ = {isa = PBXBuildFile; fileRef = 549A0F551FDAF3AF00E32B08 /* ChildVC4.m */; };
+		549A0F591FDAF3C000E32B08 /* ChildVC5.m in Sources */ = {isa = PBXBuildFile; fileRef = 549A0F581FDAF3C000E32B08 /* ChildVC5.m */; };
+		549A0F5C1FDAF51B00E32B08 /* ChildVC3.m in Sources */ = {isa = PBXBuildFile; fileRef = 549A0F5B1FDAF51B00E32B08 /* ChildVC3.m */; };
+		549A0F621FDB002500E32B08 /* ChildVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 549A0F611FDB002500E32B08 /* ChildVC.m */; };
+		549A0F651FDB046A00E32B08 /* Demo2VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 549A0F641FDB046900E32B08 /* Demo2VC.m */; };
+		549A0F681FDB051700E32B08 /* DemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 549A0F671FDB051700E32B08 /* DemoVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +65,38 @@
 		54523F821FDAD28400F6F1C5 /* AdsorbDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AdsorbDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		54523F861FDAD28400F6F1C5 /* AdsorbDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AdsorbDemoUITests.m; sourceTree = "<group>"; };
 		54523F881FDAD28400F6F1C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		54523F9A1FDADAED00F6F1C5 /* UITableView+SDAutoTableViewCellHeight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+SDAutoTableViewCellHeight.h"; sourceTree = "<group>"; };
+		54523F9B1FDADAED00F6F1C5 /* UIView+SDAutoLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SDAutoLayout.h"; sourceTree = "<group>"; };
+		54523F9C1FDADAEE00F6F1C5 /* UIView+SDAutoLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SDAutoLayout.m"; sourceTree = "<group>"; };
+		54523F9D1FDADAEE00F6F1C5 /* SDAutoLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDAutoLayout.h; sourceTree = "<group>"; };
+		54523F9E1FDADAEE00F6F1C5 /* UITableView+SDAutoTableViewCellHeight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+SDAutoTableViewCellHeight.m"; sourceTree = "<group>"; };
+		54523FA21FDADB9600F6F1C5 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		54523FA61FDADC9D00F6F1C5 /* Demo1VC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Demo1VC.h; sourceTree = "<group>"; };
+		54523FA71FDADC9D00F6F1C5 /* Demo1VC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Demo1VC.m; sourceTree = "<group>"; };
+		54523FAA1FDADD6100F6F1C5 /* HMSegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMSegmentedControl.h; sourceTree = "<group>"; };
+		54523FAC1FDADD6100F6F1C5 /* UITableView+CYLTableViewPlaceHolder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+CYLTableViewPlaceHolder.m"; sourceTree = "<group>"; };
+		54523FAD1FDADD6100F6F1C5 /* CYLTableViewPlaceHolder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLTableViewPlaceHolder.h; sourceTree = "<group>"; };
+		54523FAE1FDADD6100F6F1C5 /* CYLTableViewPlaceHolderDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLTableViewPlaceHolderDelegate.h; sourceTree = "<group>"; };
+		54523FAF1FDADD6100F6F1C5 /* UITableView+CYLTableViewPlaceHolder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+CYLTableViewPlaceHolder.h"; sourceTree = "<group>"; };
+		54523FB01FDADD6100F6F1C5 /* HMSegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMSegmentedControl.m; sourceTree = "<group>"; };
+		54523FB31FDADD7700F6F1C5 /* HMSegmentedControl+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "HMSegmentedControl+Category.h"; sourceTree = "<group>"; };
+		54523FB41FDADD7700F6F1C5 /* HMSegmentedControl+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "HMSegmentedControl+Category.m"; sourceTree = "<group>"; };
+		549A0F4E1FDAF38600E32B08 /* ChildVC1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChildVC1.h; sourceTree = "<group>"; };
+		549A0F4F1FDAF38600E32B08 /* ChildVC1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChildVC1.m; sourceTree = "<group>"; };
+		549A0F511FDAF39100E32B08 /* ChildVC2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChildVC2.h; sourceTree = "<group>"; };
+		549A0F521FDAF39100E32B08 /* ChildVC2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChildVC2.m; sourceTree = "<group>"; };
+		549A0F541FDAF3AF00E32B08 /* ChildVC4.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChildVC4.h; sourceTree = "<group>"; };
+		549A0F551FDAF3AF00E32B08 /* ChildVC4.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChildVC4.m; sourceTree = "<group>"; };
+		549A0F571FDAF3C000E32B08 /* ChildVC5.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChildVC5.h; sourceTree = "<group>"; };
+		549A0F581FDAF3C000E32B08 /* ChildVC5.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChildVC5.m; sourceTree = "<group>"; };
+		549A0F5A1FDAF51B00E32B08 /* ChildVC3.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChildVC3.h; sourceTree = "<group>"; };
+		549A0F5B1FDAF51B00E32B08 /* ChildVC3.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChildVC3.m; sourceTree = "<group>"; };
+		549A0F601FDB002500E32B08 /* ChildVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChildVC.h; sourceTree = "<group>"; };
+		549A0F611FDB002500E32B08 /* ChildVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChildVC.m; sourceTree = "<group>"; };
+		549A0F631FDB046900E32B08 /* Demo2VC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Demo2VC.h; sourceTree = "<group>"; };
+		549A0F641FDB046900E32B08 /* Demo2VC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Demo2VC.m; sourceTree = "<group>"; };
+		549A0F661FDB051700E32B08 /* DemoVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DemoVC.h; sourceTree = "<group>"; };
+		549A0F671FDB051700E32B08 /* DemoVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +147,18 @@
 		54523F611FDAD28300F6F1C5 /* AdsorbDemo */ = {
 			isa = PBXGroup;
 			children = (
+				549A0F4D1FDAF2B600E32B08 /* ChildVC */,
+				54523FA11FDADB0800F6F1C5 /* 响应似的吸附Demo */,
+				54523F971FDAD48600F6F1C5 /* New Group3 */,
+				54523F961FDAD48200F6F1C5 /* New Group2 */,
+				54523F951FDAD48100F6F1C5 /* New Group1 */,
+				54523F941FDAD47E00F6F1C5 /* New Group */,
+				54523F981FDADACE00F6F1C5 /* Support */,
 				54523F621FDAD28300F6F1C5 /* AppDelegate.h */,
 				54523F631FDAD28300F6F1C5 /* AppDelegate.m */,
 				54523F651FDAD28300F6F1C5 /* ViewController.h */,
 				54523F661FDAD28300F6F1C5 /* ViewController.m */,
+				54523FA21FDADB9600F6F1C5 /* PrefixHeader.pch */,
 				54523F681FDAD28400F6F1C5 /* Main.storyboard */,
 				54523F6B1FDAD28400F6F1C5 /* Assets.xcassets */,
 				54523F6D1FDAD28400F6F1C5 /* LaunchScreen.storyboard */,
@@ -130,6 +184,110 @@
 				54523F881FDAD28400F6F1C5 /* Info.plist */,
 			);
 			path = AdsorbDemoUITests;
+			sourceTree = "<group>";
+		};
+		54523F941FDAD47E00F6F1C5 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		54523F951FDAD48100F6F1C5 /* New Group1 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group1";
+			sourceTree = "<group>";
+		};
+		54523F961FDAD48200F6F1C5 /* New Group2 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group2";
+			sourceTree = "<group>";
+		};
+		54523F971FDAD48600F6F1C5 /* New Group3 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group3";
+			sourceTree = "<group>";
+		};
+		54523F981FDADACE00F6F1C5 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				54523FB31FDADD7700F6F1C5 /* HMSegmentedControl+Category.h */,
+				54523FB41FDADD7700F6F1C5 /* HMSegmentedControl+Category.m */,
+				54523FA91FDADD6100F6F1C5 /* HMSegmentedControl */,
+				54523F991FDADADD00F6F1C5 /* SDAutoLayout */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		54523F991FDADADD00F6F1C5 /* SDAutoLayout */ = {
+			isa = PBXGroup;
+			children = (
+				54523F9D1FDADAEE00F6F1C5 /* SDAutoLayout.h */,
+				54523F9A1FDADAED00F6F1C5 /* UITableView+SDAutoTableViewCellHeight.h */,
+				54523F9E1FDADAEE00F6F1C5 /* UITableView+SDAutoTableViewCellHeight.m */,
+				54523F9B1FDADAED00F6F1C5 /* UIView+SDAutoLayout.h */,
+				54523F9C1FDADAEE00F6F1C5 /* UIView+SDAutoLayout.m */,
+			);
+			path = SDAutoLayout;
+			sourceTree = "<group>";
+		};
+		54523FA11FDADB0800F6F1C5 /* 响应似的吸附Demo */ = {
+			isa = PBXGroup;
+			children = (
+				549A0F661FDB051700E32B08 /* DemoVC.h */,
+				549A0F671FDB051700E32B08 /* DemoVC.m */,
+				54523FA61FDADC9D00F6F1C5 /* Demo1VC.h */,
+				54523FA71FDADC9D00F6F1C5 /* Demo1VC.m */,
+				549A0F631FDB046900E32B08 /* Demo2VC.h */,
+				549A0F641FDB046900E32B08 /* Demo2VC.m */,
+			);
+			path = "响应似的吸附Demo";
+			sourceTree = "<group>";
+		};
+		54523FA91FDADD6100F6F1C5 /* HMSegmentedControl */ = {
+			isa = PBXGroup;
+			children = (
+				54523FAA1FDADD6100F6F1C5 /* HMSegmentedControl.h */,
+				54523FB01FDADD6100F6F1C5 /* HMSegmentedControl.m */,
+				54523FAB1FDADD6100F6F1C5 /* CYLTableViewPlaceHolder */,
+			);
+			path = HMSegmentedControl;
+			sourceTree = "<group>";
+		};
+		54523FAB1FDADD6100F6F1C5 /* CYLTableViewPlaceHolder */ = {
+			isa = PBXGroup;
+			children = (
+				54523FAC1FDADD6100F6F1C5 /* UITableView+CYLTableViewPlaceHolder.m */,
+				54523FAD1FDADD6100F6F1C5 /* CYLTableViewPlaceHolder.h */,
+				54523FAE1FDADD6100F6F1C5 /* CYLTableViewPlaceHolderDelegate.h */,
+				54523FAF1FDADD6100F6F1C5 /* UITableView+CYLTableViewPlaceHolder.h */,
+			);
+			path = CYLTableViewPlaceHolder;
+			sourceTree = "<group>";
+		};
+		549A0F4D1FDAF2B600E32B08 /* ChildVC */ = {
+			isa = PBXGroup;
+			children = (
+				549A0F601FDB002500E32B08 /* ChildVC.h */,
+				549A0F611FDB002500E32B08 /* ChildVC.m */,
+				549A0F4E1FDAF38600E32B08 /* ChildVC1.h */,
+				549A0F4F1FDAF38600E32B08 /* ChildVC1.m */,
+				549A0F511FDAF39100E32B08 /* ChildVC2.h */,
+				549A0F521FDAF39100E32B08 /* ChildVC2.m */,
+				549A0F5A1FDAF51B00E32B08 /* ChildVC3.h */,
+				549A0F5B1FDAF51B00E32B08 /* ChildVC3.m */,
+				549A0F541FDAF3AF00E32B08 /* ChildVC4.h */,
+				549A0F551FDAF3AF00E32B08 /* ChildVC4.m */,
+				549A0F571FDAF3C000E32B08 /* ChildVC5.h */,
+				549A0F581FDAF3C000E32B08 /* ChildVC5.m */,
+			);
+			path = ChildVC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,8 +424,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				54523F671FDAD28300F6F1C5 /* ViewController.m in Sources */,
+				549A0F621FDB002500E32B08 /* ChildVC.m in Sources */,
+				54523FB21FDADD6200F6F1C5 /* HMSegmentedControl.m in Sources */,
 				54523F721FDAD28400F6F1C5 /* main.m in Sources */,
+				549A0F651FDB046A00E32B08 /* Demo2VC.m in Sources */,
+				549A0F501FDAF38600E32B08 /* ChildVC1.m in Sources */,
+				549A0F681FDB051700E32B08 /* DemoVC.m in Sources */,
+				54523FB11FDADD6200F6F1C5 /* UITableView+CYLTableViewPlaceHolder.m in Sources */,
+				54523F9F1FDADAEE00F6F1C5 /* UIView+SDAutoLayout.m in Sources */,
+				549A0F561FDAF3AF00E32B08 /* ChildVC4.m in Sources */,
+				549A0F591FDAF3C000E32B08 /* ChildVC5.m in Sources */,
 				54523F641FDAD28300F6F1C5 /* AppDelegate.m in Sources */,
+				549A0F531FDAF39100E32B08 /* ChildVC2.m in Sources */,
+				54523FA01FDADAEE00F6F1C5 /* UITableView+SDAutoTableViewCellHeight.m in Sources */,
+				54523FA81FDADC9D00F6F1C5 /* Demo1VC.m in Sources */,
+				54523FB51FDADD7800F6F1C5 /* HMSegmentedControl+Category.m in Sources */,
+				549A0F5C1FDAF51B00E32B08 /* ChildVC3.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,6 +604,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5DVPT5R6X2;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/AdsorbDemo/PrefixHeader.pch";
 				INFOPLIST_FILE = AdsorbDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Shin.AdsorbDemo;
@@ -446,6 +619,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5DVPT5R6X2;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/AdsorbDemo/PrefixHeader.pch";
 				INFOPLIST_FILE = AdsorbDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Shin.AdsorbDemo;

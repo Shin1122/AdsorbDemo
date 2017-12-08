@@ -887,7 +887,7 @@
 
 - (NSDictionary *)resultingTitleTextAttributes {
     NSDictionary *defaults = @{
-        NSFontAttributeName : [UIFont systemFontOfSize:19.0f*ScrenScale],
+        NSFontAttributeName : [UIFont systemFontOfSize:19.0f],
         NSForegroundColorAttributeName : [UIColor blackColor],
     };
     

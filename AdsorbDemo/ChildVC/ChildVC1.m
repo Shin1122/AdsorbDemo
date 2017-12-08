@@ -8,7 +8,9 @@
 
 #import "ChildVC1.h"
 
-@interface ChildVC1 ()
+@interface ChildVC1 ()<UITableViewDelegate ,UITableViewDataSource>{
+    
+}
 
 @end
 
@@ -16,8 +18,38 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    _mainView = [[UITableView alloc]initWithFrame:CGRectZero style:UITableViewStylePlain];
+    [self.view addSubview:_mainView];
+    _mainView.allowsSelection = NO;
+    _mainView.sd_layout
+    .leftSpaceToView(self.view, 0)
+    .rightSpaceToView(self.view, 0)
+    .topSpaceToView(self.view, 0)
+    .bottomSpaceToView(self.view, 0);
+    _mainView.delegate = self;
+    _mainView.dataSource = self;
+    
+    self.leadingViewState = LeadingViewStateUnfold;
+    
 }
+
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return 20;
+}
+
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    static NSString *cellIdenfier = @"cell";
+    UITableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:cellIdenfier];
+    if (cell==nil) {
+        cell=[[UITableViewCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"cell"];
+    }
+    cell.textLabel.text = [NSString stringWithFormat:@"第 %ld 组数据",(long)indexPath.row];
+    [cell useCellFrameCacheWithIndexPath:indexPath tableView:tableView];
+    return  cell;
+    
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

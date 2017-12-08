@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface ChildVC4 : UIViewController
+#import "ChildVC3.h"
+@interface ChildVC4 :ChildVC3
 
 @end

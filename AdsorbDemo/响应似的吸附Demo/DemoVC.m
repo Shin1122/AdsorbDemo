@@ -8,7 +8,7 @@
 
 #import "DemoVC.h"
 
-@interface DemoVC ()
+@interface DemoVC ()<UIScrollViewDelegate>
 
 @end
 
@@ -16,7 +16,27 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    self.segment = [HMSegmentedControl segmentControlWithTitles:@[@"VC1",@"VC2",@"VC3"]];
+    [self.view addSubview:self.segment];
+    
+    self.scrollView = [[UIScrollView alloc]init];
+    [self.view addSubview:self.scrollView];
+    
+    
+    self.scrollView.pagingEnabled = YES;
+    self.scrollView.showsVerticalScrollIndicator = NO;
+    self.scrollView.showsHorizontalScrollIndicator = NO;
+    self.scrollView.contentSize = CGSizeMake(self.view.width_sd*3, self.view.height_sd-self.segment.bottom_sd);
+    self.scrollView.delegate = self;
+    self.segment.meanScrollView = self.scrollView;
+}
+
+//segment的滑动方法
+-(void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView{
+    if (scrollView == self.scrollView) {
+        NSInteger index = scrollView.contentOffset.x/scrollView.width_sd ;
+        [self.segment setSelectedSegmentIndex:index animated:YES];
+    }
 }
 
 - (void)didReceiveMemoryWarning {
