@@ -15,6 +15,8 @@
     
     NSArray *_menu ;
     
+    NSArray *_titles;
+    
     UITableView *_mainView;
 }
 
@@ -28,6 +30,9 @@
     self.title = @"Demo";
     _menu = @[@{@"title":@"Segment联动吸附效果1",@"subtitle":@"子控制器发送通知方法(见代码)"},
               @{@"title":@"Segment联动吸附效果2",@"subtitle":@"控制器监听方法(见代码)"},];
+    
+    _titles = @[@"header隐藏,segment吸附效果",@"仿微博个人主页"];
+    
     _mainView = [[UITableView alloc]initWithFrame:self.view.bounds style:UITableViewStyleGrouped];
     [self.view addSubview:_mainView];
     _mainView.delegate = self;
@@ -62,19 +67,8 @@
 
 -(NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section{
     
-    __block NSString *title;
     
-    switch (section) {
-        case 0:
-            title = @"header隐藏,segment吸附效果";
-            break;
-            
-        case 1:
-            break;
-    }
-    
-    return title;
-    
+    return _titles[section];
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{

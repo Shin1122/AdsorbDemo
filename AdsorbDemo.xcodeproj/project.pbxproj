@@ -21,6 +21,7 @@
 		54523FB11FDADD6200F6F1C5 /* UITableView+CYLTableViewPlaceHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = 54523FAC1FDADD6100F6F1C5 /* UITableView+CYLTableViewPlaceHolder.m */; };
 		54523FB21FDADD6200F6F1C5 /* HMSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 54523FB01FDADD6100F6F1C5 /* HMSegmentedControl.m */; };
 		54523FB51FDADD7800F6F1C5 /* HMSegmentedControl+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 54523FB41FDADD7700F6F1C5 /* HMSegmentedControl+Category.m */; };
+		547AFC2B1FDC228E0012A3F2 /* WeiboDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 547AFC2A1FDC228E0012A3F2 /* WeiboDemo.m */; };
 		549A0F501FDAF38600E32B08 /* ChildVC1.m in Sources */ = {isa = PBXBuildFile; fileRef = 549A0F4F1FDAF38600E32B08 /* ChildVC1.m */; };
 		549A0F531FDAF39100E32B08 /* ChildVC2.m in Sources */ = {isa = PBXBuildFile; fileRef = 549A0F521FDAF39100E32B08 /* ChildVC2.m */; };
 		549A0F561FDAF3AF00E32B08 /* ChildVC4.m in Sources */ = {isa = PBXBuildFile; fileRef = 549A0F551FDAF3AF00E32B08 /* ChildVC4.m */; };
@@ -81,6 +82,8 @@
 		54523FB01FDADD6100F6F1C5 /* HMSegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMSegmentedControl.m; sourceTree = "<group>"; };
 		54523FB31FDADD7700F6F1C5 /* HMSegmentedControl+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "HMSegmentedControl+Category.h"; sourceTree = "<group>"; };
 		54523FB41FDADD7700F6F1C5 /* HMSegmentedControl+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "HMSegmentedControl+Category.m"; sourceTree = "<group>"; };
+		547AFC291FDC228E0012A3F2 /* WeiboDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeiboDemo.h; sourceTree = "<group>"; };
+		547AFC2A1FDC228E0012A3F2 /* WeiboDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeiboDemo.m; sourceTree = "<group>"; };
 		549A0F4E1FDAF38600E32B08 /* ChildVC1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChildVC1.h; sourceTree = "<group>"; };
 		549A0F4F1FDAF38600E32B08 /* ChildVC1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChildVC1.m; sourceTree = "<group>"; };
 		549A0F511FDAF39100E32B08 /* ChildVC2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChildVC2.h; sourceTree = "<group>"; };
@@ -149,7 +152,7 @@
 			children = (
 				549A0F4D1FDAF2B600E32B08 /* ChildVC */,
 				54523FA11FDADB0800F6F1C5 /* 响应似的吸附Demo */,
-				54523F971FDAD48600F6F1C5 /* New Group3 */,
+				54523F971FDAD48600F6F1C5 /* 仿微博个人主页Demo */,
 				54523F961FDAD48200F6F1C5 /* New Group2 */,
 				54523F951FDAD48100F6F1C5 /* New Group1 */,
 				54523F941FDAD47E00F6F1C5 /* New Group */,
@@ -207,11 +210,13 @@
 			path = "New Group2";
 			sourceTree = "<group>";
 		};
-		54523F971FDAD48600F6F1C5 /* New Group3 */ = {
+		54523F971FDAD48600F6F1C5 /* 仿微博个人主页Demo */ = {
 			isa = PBXGroup;
 			children = (
+				547AFC291FDC228E0012A3F2 /* WeiboDemo.h */,
+				547AFC2A1FDC228E0012A3F2 /* WeiboDemo.m */,
 			);
-			path = "New Group3";
+			path = "仿微博个人主页Demo";
 			sourceTree = "<group>";
 		};
 		54523F981FDADACE00F6F1C5 /* Support */ = {
@@ -434,6 +439,7 @@
 				54523F9F1FDADAEE00F6F1C5 /* UIView+SDAutoLayout.m in Sources */,
 				549A0F561FDAF3AF00E32B08 /* ChildVC4.m in Sources */,
 				549A0F591FDAF3C000E32B08 /* ChildVC5.m in Sources */,
+				547AFC2B1FDC228E0012A3F2 /* WeiboDemo.m in Sources */,
 				54523F641FDAD28300F6F1C5 /* AppDelegate.m in Sources */,
 				549A0F531FDAF39100E32B08 /* ChildVC2.m in Sources */,
 				54523FA01FDADAEE00F6F1C5 /* UITableView+SDAutoTableViewCellHeight.m in Sources */,
