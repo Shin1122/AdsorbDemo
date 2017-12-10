@@ -16,6 +16,27 @@
 #import "HFStretchableTableHeaderView.h"
 
 
+/**
+ 
+ 实现思路:
+ 图像布局:
+ 1.整个页面的最底层contentView是一个UITableView.
+ 2.tableView的header就是显示用户基本信息的地方.
+ 3.有一个sectionHeader,sectionHeader用来方式segment(滑动分段控制器)
+ 4.整个大的tableview只有一行cell,这个cell上只有一个scrollView控件,用来放置多个列表展示页
+ 5.在唯一的cell里,每个子视图对应的控制器,要添加为当前viewController的子控制器.
+ 
+ 滑动逻辑:
+ 1.在当前控制器和唯一的cell里要有bool判断是否可以滑动
+ 2.在子控制器进行滑动的时候进行监听,随之整个大的tableview进行滑动.
+ 3.当滑动到sectionheader的位置的时候,大的tableView停止滑动,只有cell上的scrollview和每个子视图可以滑动
+ 4.下拉的时候根据滑动位置判断大的tableview是否需要进行滑动.
+ 
+ 最后加一个带吸附效果的header. 和一个背景alpha自动变化的navigation.
+ 
+ */
+
+
 @interface WeiboDemo ()<UIScrollViewDelegate,UITableViewDelegate,UITableViewDataSource>{
     
     ChildVC5 *_vc1;
@@ -67,7 +88,7 @@
     [self setupNavBar];
     
     //监听
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onOtherScrollToTop:) name:@"kLeaveTopNtf" object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onOtherScrollToTop:) name:@"LeftTop" object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onScrollBottomView:) name:@"PageViewGestureState" object:nil];
     
 }
@@ -199,10 +220,9 @@
     if (scrollView.contentOffset.y < 0 && !self.isRefreshing && scrollView.contentOffset.y < self.lastContentOffY && self.lastContentOffY < 0) {
         if(!self.isRefreshing){
             //navbar开始刷新
-//            [self.userPageNavBar dl_willRefresh];
         }else{
             //navbar结束刷新
-//            [self.userPageNavBar dl_endRefresh];
+
         }
     }
     
@@ -213,11 +233,8 @@
 -(void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate
 {
     if (self.shouldRefresh && !self.isRefreshing) {
-//        [self.userPageNavBar dl_refresh];
-//        [self.contentCell dl_refresh];
         self.isRefreshing  = YES;
     }else if(!self.isRefreshing){
-//        [self.userPageNavBar dl_endRefresh];
         self.isRefreshing = NO;
     }
 }

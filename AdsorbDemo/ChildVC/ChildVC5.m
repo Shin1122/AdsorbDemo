@@ -20,6 +20,11 @@
     self.tableView.showsHorizontalScrollIndicator = NO;
     self.tableView.allowsSelection = NO;
     
+    UIView *head = [[UIView alloc]init];
+    head.frame = CGRectMake(0, 0, self.view.width_sd, 20);
+    head.backgroundColor = [UIColor lightGrayColor];
+    self.tableView.tableHeaderView = head;
+    
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
@@ -54,7 +59,7 @@
     }
     CGFloat offsetY = scrollView.contentOffset.y;
     if (offsetY<0) {
-        [[NSNotificationCenter defaultCenter] postNotificationName:@"kLeaveTopNtf" object:@1];
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"LeftTop" object:@1];
         self.canScroll = NO;
         scrollView.contentOffset = CGPointZero;
     }
