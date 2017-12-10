@@ -8,6 +8,7 @@
 
 #import "ChildVC1.h"
 
+
 @interface ChildVC1 ()<UITableViewDelegate ,UITableViewDataSource>{
     
 }
@@ -31,6 +32,10 @@
     
     self.leadingViewState = LeadingViewStateUnfold;
     
+    UIView *head = [[UIView alloc]init];
+    head.frame = CGRectMake(0, 0, self.view.width_sd, 20);
+    head.backgroundColor = [UIColor lightGrayColor];
+    _mainView.tableHeaderView = head;
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
@@ -49,6 +54,8 @@
     return  cell;
     
 }
+
+
 
 
 - (void)didReceiveMemoryWarning {

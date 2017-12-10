@@ -22,6 +22,13 @@
 		54523FB21FDADD6200F6F1C5 /* HMSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 54523FB01FDADD6100F6F1C5 /* HMSegmentedControl.m */; };
 		54523FB51FDADD7800F6F1C5 /* HMSegmentedControl+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 54523FB41FDADD7700F6F1C5 /* HMSegmentedControl+Category.m */; };
 		547AFC2B1FDC228E0012A3F2 /* WeiboDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 547AFC2A1FDC228E0012A3F2 /* WeiboDemo.m */; };
+		547AFC311FDC33CB0012A3F2 /* WeiboHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 547AFC301FDC33CB0012A3F2 /* WeiboHeader.m */; };
+		547AFC331FDC33E00012A3F2 /* WeiboHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 547AFC321FDC33E00012A3F2 /* WeiboHeader.xib */; };
+		547AFC361FDC41DB0012A3F2 /* Weibo_NavBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 547AFC351FDC41DB0012A3F2 /* Weibo_NavBar.m */; };
+		547AFC391FDC59C10012A3F2 /* HFStretchableTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 547AFC381FDC59C10012A3F2 /* HFStretchableTableHeaderView.m */; };
+		547AFC3D1FDC5A510012A3F2 /* UITableView+Guesture.m in Sources */ = {isa = PBXBuildFile; fileRef = 547AFC3C1FDC5A510012A3F2 /* UITableView+Guesture.m */; };
+		548EDC0F1FDD7EBF0072A3B1 /* SegmentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 548EDC0E1FDD7EBF0072A3B1 /* SegmentCell.m */; };
+		548EDC181FDD92E00072A3B1 /* ChildVC6.m in Sources */ = {isa = PBXBuildFile; fileRef = 548EDC171FDD92E00072A3B1 /* ChildVC6.m */; };
 		549A0F501FDAF38600E32B08 /* ChildVC1.m in Sources */ = {isa = PBXBuildFile; fileRef = 549A0F4F1FDAF38600E32B08 /* ChildVC1.m */; };
 		549A0F531FDAF39100E32B08 /* ChildVC2.m in Sources */ = {isa = PBXBuildFile; fileRef = 549A0F521FDAF39100E32B08 /* ChildVC2.m */; };
 		549A0F561FDAF3AF00E32B08 /* ChildVC4.m in Sources */ = {isa = PBXBuildFile; fileRef = 549A0F551FDAF3AF00E32B08 /* ChildVC4.m */; };
@@ -84,6 +91,19 @@
 		54523FB41FDADD7700F6F1C5 /* HMSegmentedControl+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "HMSegmentedControl+Category.m"; sourceTree = "<group>"; };
 		547AFC291FDC228E0012A3F2 /* WeiboDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeiboDemo.h; sourceTree = "<group>"; };
 		547AFC2A1FDC228E0012A3F2 /* WeiboDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeiboDemo.m; sourceTree = "<group>"; };
+		547AFC2F1FDC33CB0012A3F2 /* WeiboHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeiboHeader.h; sourceTree = "<group>"; };
+		547AFC301FDC33CB0012A3F2 /* WeiboHeader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeiboHeader.m; sourceTree = "<group>"; };
+		547AFC321FDC33E00012A3F2 /* WeiboHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WeiboHeader.xib; sourceTree = "<group>"; };
+		547AFC341FDC41DB0012A3F2 /* Weibo_NavBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Weibo_NavBar.h; sourceTree = "<group>"; };
+		547AFC351FDC41DB0012A3F2 /* Weibo_NavBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Weibo_NavBar.m; sourceTree = "<group>"; };
+		547AFC371FDC59C10012A3F2 /* HFStretchableTableHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFStretchableTableHeaderView.h; sourceTree = "<group>"; };
+		547AFC381FDC59C10012A3F2 /* HFStretchableTableHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFStretchableTableHeaderView.m; sourceTree = "<group>"; };
+		547AFC3B1FDC5A510012A3F2 /* UITableView+Guesture.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITableView+Guesture.h"; sourceTree = "<group>"; };
+		547AFC3C1FDC5A510012A3F2 /* UITableView+Guesture.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITableView+Guesture.m"; sourceTree = "<group>"; };
+		548EDC0D1FDD7EBF0072A3B1 /* SegmentCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SegmentCell.h; sourceTree = "<group>"; };
+		548EDC0E1FDD7EBF0072A3B1 /* SegmentCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SegmentCell.m; sourceTree = "<group>"; };
+		548EDC161FDD92E00072A3B1 /* ChildVC6.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChildVC6.h; sourceTree = "<group>"; };
+		548EDC171FDD92E00072A3B1 /* ChildVC6.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChildVC6.m; sourceTree = "<group>"; };
 		549A0F4E1FDAF38600E32B08 /* ChildVC1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChildVC1.h; sourceTree = "<group>"; };
 		549A0F4F1FDAF38600E32B08 /* ChildVC1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChildVC1.m; sourceTree = "<group>"; };
 		549A0F511FDAF39100E32B08 /* ChildVC2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChildVC2.h; sourceTree = "<group>"; };
@@ -215,6 +235,15 @@
 			children = (
 				547AFC291FDC228E0012A3F2 /* WeiboDemo.h */,
 				547AFC2A1FDC228E0012A3F2 /* WeiboDemo.m */,
+				548EDC0D1FDD7EBF0072A3B1 /* SegmentCell.h */,
+				548EDC0E1FDD7EBF0072A3B1 /* SegmentCell.m */,
+				547AFC2F1FDC33CB0012A3F2 /* WeiboHeader.h */,
+				547AFC301FDC33CB0012A3F2 /* WeiboHeader.m */,
+				547AFC321FDC33E00012A3F2 /* WeiboHeader.xib */,
+				547AFC341FDC41DB0012A3F2 /* Weibo_NavBar.h */,
+				547AFC351FDC41DB0012A3F2 /* Weibo_NavBar.m */,
+				547AFC3B1FDC5A510012A3F2 /* UITableView+Guesture.h */,
+				547AFC3C1FDC5A510012A3F2 /* UITableView+Guesture.m */,
 			);
 			path = "仿微博个人主页Demo";
 			sourceTree = "<group>";
@@ -224,6 +253,7 @@
 			children = (
 				54523FB31FDADD7700F6F1C5 /* HMSegmentedControl+Category.h */,
 				54523FB41FDADD7700F6F1C5 /* HMSegmentedControl+Category.m */,
+				547AFC3A1FDC59C70012A3F2 /* HFStretchableTableHeaderView */,
 				54523FA91FDADD6100F6F1C5 /* HMSegmentedControl */,
 				54523F991FDADADD00F6F1C5 /* SDAutoLayout */,
 			);
@@ -276,6 +306,15 @@
 			path = CYLTableViewPlaceHolder;
 			sourceTree = "<group>";
 		};
+		547AFC3A1FDC59C70012A3F2 /* HFStretchableTableHeaderView */ = {
+			isa = PBXGroup;
+			children = (
+				547AFC371FDC59C10012A3F2 /* HFStretchableTableHeaderView.h */,
+				547AFC381FDC59C10012A3F2 /* HFStretchableTableHeaderView.m */,
+			);
+			path = HFStretchableTableHeaderView;
+			sourceTree = "<group>";
+		};
 		549A0F4D1FDAF2B600E32B08 /* ChildVC */ = {
 			isa = PBXGroup;
 			children = (
@@ -291,6 +330,8 @@
 				549A0F551FDAF3AF00E32B08 /* ChildVC4.m */,
 				549A0F571FDAF3C000E32B08 /* ChildVC5.h */,
 				549A0F581FDAF3C000E32B08 /* ChildVC5.m */,
+				548EDC161FDD92E00072A3B1 /* ChildVC6.h */,
+				548EDC171FDD92E00072A3B1 /* ChildVC6.m */,
 			);
 			path = ChildVC;
 			sourceTree = "<group>";
@@ -404,6 +445,7 @@
 				54523F6F1FDAD28400F6F1C5 /* LaunchScreen.storyboard in Resources */,
 				54523F6C1FDAD28400F6F1C5 /* Assets.xcassets in Resources */,
 				54523F6A1FDAD28400F6F1C5 /* Main.storyboard in Resources */,
+				547AFC331FDC33E00012A3F2 /* WeiboHeader.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,6 +474,7 @@
 				549A0F621FDB002500E32B08 /* ChildVC.m in Sources */,
 				54523FB21FDADD6200F6F1C5 /* HMSegmentedControl.m in Sources */,
 				54523F721FDAD28400F6F1C5 /* main.m in Sources */,
+				547AFC391FDC59C10012A3F2 /* HFStretchableTableHeaderView.m in Sources */,
 				549A0F651FDB046A00E32B08 /* Demo2VC.m in Sources */,
 				549A0F501FDAF38600E32B08 /* ChildVC1.m in Sources */,
 				549A0F681FDB051700E32B08 /* DemoVC.m in Sources */,
@@ -443,7 +486,12 @@
 				54523F641FDAD28300F6F1C5 /* AppDelegate.m in Sources */,
 				549A0F531FDAF39100E32B08 /* ChildVC2.m in Sources */,
 				54523FA01FDADAEE00F6F1C5 /* UITableView+SDAutoTableViewCellHeight.m in Sources */,
+				548EDC181FDD92E00072A3B1 /* ChildVC6.m in Sources */,
+				547AFC311FDC33CB0012A3F2 /* WeiboHeader.m in Sources */,
+				547AFC3D1FDC5A510012A3F2 /* UITableView+Guesture.m in Sources */,
+				547AFC361FDC41DB0012A3F2 /* Weibo_NavBar.m in Sources */,
 				54523FA81FDADC9D00F6F1C5 /* Demo1VC.m in Sources */,
+				548EDC0F1FDD7EBF0072A3B1 /* SegmentCell.m in Sources */,
 				54523FB51FDADD7800F6F1C5 /* HMSegmentedControl+Category.m in Sources */,
 				549A0F5C1FDAF51B00E32B08 /* ChildVC3.m in Sources */,
 			);
@@ -608,10 +656,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5DVPT5R6X2;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/AdsorbDemo/PrefixHeader.pch";
 				INFOPLIST_FILE = AdsorbDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Shin.AdsorbDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -623,10 +673,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5DVPT5R6X2;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/AdsorbDemo/PrefixHeader.pch";
 				INFOPLIST_FILE = AdsorbDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Shin.AdsorbDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";

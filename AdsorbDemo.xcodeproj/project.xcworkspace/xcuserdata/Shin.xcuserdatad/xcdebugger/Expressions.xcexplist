@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "-[WeiboDemo configRefreshStateWithScrollView:]:WeiboDemo.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "_canScroll">
+            </PersistentString>
+            <PersistentString
+               value = "_segmentCell.canScroll">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[WeiboDemo onScrollBottomView:]:WeiboDemo.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.tableView.scrollEnabled">
+            </PersistentString>
+            <PersistentString
+               value = "_segmentCell.canScroll">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[WeiboDemo setupChildVC]:WeiboDemo.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "_segmentCell">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

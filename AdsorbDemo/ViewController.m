@@ -9,7 +9,7 @@
 #import "ViewController.h"
 #import "Demo1VC.h"
 #import "Demo2VC.h"
-
+#import "WeiboDemo.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>{
     
@@ -29,7 +29,9 @@
     
     self.title = @"Demo";
     _menu = @[@{@"title":@"Segment联动吸附效果1",@"subtitle":@"子控制器发送通知方法(见代码)"},
-              @{@"title":@"Segment联动吸附效果2",@"subtitle":@"控制器监听方法(见代码)"},];
+              @{@"title":@"Segment联动吸附效果2",@"subtitle":@"控制器监听方法(见代码)"},
+              @{@"title":@"仿微博个人主页",@"subtitle":@"切换segment后的head变化滑动"},
+              @{@"title":@"仿微博个人主页",@"subtitle":@"切换segment后的head变化滑动"},];
     
     _titles = @[@"header隐藏,segment吸附效果",@"仿微博个人主页"];
     
@@ -46,8 +48,12 @@
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     if (section == 0) {
         return 2;
+    }else if (section == 1){
+        return 2;
+    }else{
+        return 0;
     }
-    return _menu.count;
+    
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -60,6 +66,9 @@
     if (indexPath.section == 0) {
         cell.textLabel.text = _menu[indexPath.row][@"title"];
         cell.detailTextLabel.text = _menu[indexPath.row][@"subtitle"];
+    }else if (indexPath.section == 1){
+        cell.textLabel.text = _menu[indexPath.row +2][@"title"];
+        cell.detailTextLabel.text = _menu[indexPath.row +2][@"subtitle"];
     }
     
     return  cell;
@@ -67,23 +76,33 @@
 
 -(NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section{
     
-    
     return _titles[section];
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     __block UIViewController *controller = nil;
-    switch (indexPath.row) {
-        case 0:
+    if (indexPath.section == 0) {
+        if (indexPath.row == 0) {
             controller = [[Demo1VC alloc]init];
-            break;
-        case 1:
+        }else if (indexPath.row == 1){
             controller = [[Demo2VC alloc]init];
-            break;
+        }
+    }else if (indexPath.section == 1){
+        if (indexPath.row == 0) {
+            controller = [[WeiboDemo alloc]init];
+        }else if (indexPath.row == 1){
+            controller = [[Demo2VC alloc]init];
+        }
     }
+    
+    
     [self.navigationController pushViewController:controller animated:YES];
     
+}
+
+-(UIStatusBarStyle)preferredStatusBarStyle{
+    return UIStatusBarStyleDefault;
 }
 
 

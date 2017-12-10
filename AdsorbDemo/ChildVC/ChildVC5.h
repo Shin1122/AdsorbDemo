@@ -8,6 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ChildVC5 : UIViewController
+@interface ChildVC5 : UITableViewController
+//判断手指是否离开
+@property (nonatomic, assign) BOOL isTouch;
+
+@property (assign, nonatomic) BOOL canScroll;
+@property(nonatomic,assign)BOOL isRefreshing;
 
 @end

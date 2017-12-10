@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="WeiboHeader">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="261"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="k13-an-Qbg" userLabel="headBackView">
+                    <rect key="frame" x="167" y="94" width="82" height="82"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="gin" translatesAutoresizingMaskIntoConstraints="NO" id="zRX-7D-MgN" userLabel="headView">
+                            <rect key="frame" x="1" y="1" width="80" height="80"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="big_shin" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QKA-XK-bFr" userLabel="nameLabel">
+                    <rect key="frame" x="20" y="181" width="375" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="关注 300 | 粉丝 480" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7CT-5e-DyE" userLabel="fansLabel">
+                    <rect key="frame" x="44" y="214" width="335" height="17"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="微博认证：音乐视频自媒体" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BRe-pJ-htr" userLabel="aboutLabel">
+                    <rect key="frame" x="44" y="234" width="335" height="17"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="header" translatesAutoresizingMaskIntoConstraints="NO" id="gsY-hD-Wxu" userLabel="backgroundView">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="261"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="gsY-hD-Wxu" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="9to-sN-KLy"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="gsY-hD-Wxu" secondAttribute="trailing" id="Wik-fE-rrK"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="gsY-hD-Wxu" secondAttribute="bottom" id="fn5-D1-cKh"/>
+                <constraint firstItem="gsY-hD-Wxu" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="hjN-BJ-UgJ"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="aboutLabel" destination="BRe-pJ-htr" id="asy-pF-MYY"/>
+                <outlet property="backgroundView" destination="gsY-hD-Wxu" id="Rfr-EI-PSm"/>
+                <outlet property="fansLabel" destination="7CT-5e-DyE" id="OWV-fe-ZaZ"/>
+                <outlet property="headBackView" destination="k13-an-Qbg" id="rVX-Js-Ex9"/>
+                <outlet property="headView" destination="zRX-7D-MgN" id="3V7-Q0-gcy"/>
+                <outlet property="nameLabel" destination="QKA-XK-bFr" id="9lE-WB-iX1"/>
+            </connections>
+            <point key="canvasLocation" x="-886" y="-174.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="gin" width="400" height="400"/>
+        <image name="header" width="600" height="400"/>
+    </resources>
+</document>
