@@ -26,12 +26,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AdsorbDemo/&#x4eff;&#x5fae;&#x535a;&#x4e2a;&#x4eba;&#x4e3b;&#x9875;Demo/WeiboDemo.m"
-            timestampString = "534616418.657575"
+            timestampString = "535298639.988564"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "303"
-            endingLineNumber = "303"
-            landmarkName = "-setupConfig"
+            startingLineNumber = "212"
+            endingLineNumber = "212"
+            landmarkName = "-scrollViewDidScroll:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

@@ -19,6 +19,10 @@
 /**
  
  实现思路:
+ 注:
+ * segment使用HMSegmentControl(https://github.com/HeshamMegid/HMSegmentedControl)
+ * header的下拉吸附使用HFStretchableTableHeaderView(https://github.com/hfrahmann/HFStretchableTableHeaderView)
+ 
  图像布局:
  1.整个页面的最底层contentView是一个UITableView.
  2.tableView的header就是显示用户基本信息的地方.
@@ -113,10 +117,10 @@
     _segmentCell.canScroll = NO;
 }
 
-//当滑动下面的PageView时，当前要禁止滑动
+//当滑动下面的ScrollView时，当前要禁止滑动
 - (void)onScrollBottomView:(NSNotification *)ntf {
     if ([ntf.object isEqualToString:@"ended"]) {
-        //bottomView停止滑动了  当前页可以滑动
+        //bottomView停止滑动了 当前页可以滑动
         self.tableView.scrollEnabled = YES;
     } else {
         //bottomView滑动了 当前页就禁止滑动
@@ -169,6 +173,10 @@
 
 #pragma mark - UIScrollViewDelegate
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+    
+    if (scrollView == _segmentCell.scrollView) {
+        return;
+    }
     //下拉放大 必须实现
     [_stretchableTableHeaderView scrollViewDidScroll:scrollView];
     //计算导航栏的透明度
@@ -183,6 +191,7 @@
         [_navBar.back setImage:[UIImage imageNamed:@"back_arrow_black"] forState:UIControlStateNormal];
         [_navBar.back setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
         [[UIApplication sharedApplication]setStatusBarStyle:UIStatusBarStyleDefault animated:NO];
+        
     }else{
         [_navBar.back setImage:[UIImage imageNamed:@"back_arrow_white"] forState:UIControlStateNormal];
         [_navBar.back setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
@@ -199,6 +208,8 @@
             _vc1.canScroll = YES;
             _vc2.canScroll = YES;
             _vc3.canScroll = YES;
+        }else{
+            
         }
     } else {
         if (!_canScroll) {
@@ -230,6 +241,8 @@
 }
 
 
+
+
 -(void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate
 {
     if (self.shouldRefresh && !self.isRefreshing) {
@@ -241,7 +254,7 @@
 
 
 
-//下拉放大必须实现
+//下拉放大
 - (void)viewDidLayoutSubviews {
     [_stretchableTableHeaderView resizeView];
 }
@@ -320,8 +333,7 @@
     if (scrollView == _segmentCell.scrollView) {
         NSInteger index = _segmentCell.scrollView.contentOffset.x/scrollView.width_sd;
         [_segment setSelectedSegmentIndex:index animated:YES];
-        
-        
+
     }
     
 }

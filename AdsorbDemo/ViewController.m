@@ -10,6 +10,7 @@
 #import "Demo1VC.h"
 #import "Demo2VC.h"
 #import "WeiboDemo.h"
+#import "MeiTuanDemo.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>{
     
@@ -31,9 +32,9 @@
     _menu = @[@{@"title":@"Segment联动吸附效果1",@"subtitle":@"子控制器发送通知方法(见代码)"},
               @{@"title":@"Segment联动吸附效果2",@"subtitle":@"控制器监听方法(见代码)"},
               @{@"title":@"仿微博个人主页",@"subtitle":@"切换segment后的head变化滑动"},
-              @{@"title":@"仿微博个人主页",@"subtitle":@"切换segment后的head变化滑动"},];
+              @{@"title":@"仿美团外卖样式",@"subtitle":@"NavigationBar的变化"},];
     
-    _titles = @[@"header隐藏,segment吸附效果",@"仿微博个人主页"];
+    _titles = @[@"header隐藏,segment吸附效果",@"仿微博个人主页",@"仿美团外卖NavBar变化效果"];
     
     _mainView = [[UITableView alloc]initWithFrame:self.view.bounds style:UITableViewStyleGrouped];
     [self.view addSubview:_mainView];
@@ -42,15 +43,18 @@
     
 }
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
-    return 2;
+    return 3;
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     if (section == 0) {
         return 2;
     }else if (section == 1){
-        return 2;
-    }else{
+        return 1;
+    }else if (section == 2){
+        return 1;
+    }
+    else{
         return 0;
     }
     
@@ -69,6 +73,9 @@
     }else if (indexPath.section == 1){
         cell.textLabel.text = _menu[indexPath.row +2][@"title"];
         cell.detailTextLabel.text = _menu[indexPath.row +2][@"subtitle"];
+    }else if (indexPath.section ==2){
+        cell.textLabel.text = _menu[indexPath.row +3][@"title"];
+        cell.detailTextLabel.text = _menu[indexPath.row +3][@"subtitle"];
     }
     
     return  cell;
@@ -91,11 +98,13 @@
     }else if (indexPath.section == 1){
         if (indexPath.row == 0) {
             controller = [[WeiboDemo alloc]init];
-        }else if (indexPath.row == 1){
-            controller = [[Demo2VC alloc]init];
+        }
+    }else if (indexPath.section == 2){
+        
+        if (indexPath.row == 0) {
+            controller = [[MeiTuanDemo alloc]init];
         }
     }
-    
     
     [self.navigationController pushViewController:controller animated:YES];
     
